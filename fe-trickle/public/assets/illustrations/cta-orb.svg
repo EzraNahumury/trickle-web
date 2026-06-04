@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="220" viewBox="0 0 260 220" fill="none">
+  <g stroke="#0a0a0a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="130" cy="110" rx="118" ry="46" transform="rotate(-20 130 110)"/>
+    <ellipse cx="130" cy="110" rx="118" ry="46" transform="rotate(28 130 110)"/>
+    <!-- centre droplet orb -->
+    <path d="M130 64c18 22 26 34 26 47a26 26 0 1 1-52 0c0-13 8-25 26-47Z" fill="#ffffff"/>
+    <circle cx="130" cy="116" r="9" fill="#c8f94c" stroke="#0a0a0a"/>
+  </g>
+  <!-- orbiting nodes + sparkles -->
+  <circle cx="232" cy="92" r="8" fill="#c8f94c"/>
+  <circle cx="28" cy="128" r="6" fill="#0a0a0a"/>
+  <path d="M210 150c1.2 6 2.4 7.2 8.4 8.4-6 1.2-7.2 2.4-8.4 8.4-1.2-6-2.4-7.2-8.4-8.4 6-1.2 7.2-2.4 8.4-8.4Z" fill="#0a0a0a"/>
+  <path d="M44 60c1 5 2 6 7 7-5 1-6 2-7 7-1-5-2-6-7-7 5-1 6-2 7-7Z" fill="#0a0a0a"/>
+</svg>
