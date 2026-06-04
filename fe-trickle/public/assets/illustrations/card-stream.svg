@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="168" viewBox="0 0 240 168" fill="none">
+  <g stroke="#0a0a0a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- clock = per-second cadence -->
+    <circle cx="56" cy="84" r="27" fill="#ffffff"/>
+    <path d="M56 67v17l11 8"/>
+    <path d="M56 51v4M56 113v4M24 84h4M84 84h4"/>
+    <!-- flow line with accruing coins -->
+    <path d="M92 84h120" stroke-dasharray="2 9"/>
+    <circle cx="120" cy="84" r="11" fill="#ffffff"/>
+    <path d="M120 79v10M117 81.5h4.5a2 2 0 0 1 0 4h-3a2 2 0 0 0 0 4h4.5" stroke-width="1.6"/>
+    <circle cx="160" cy="84" r="8.5" fill="#ffffff"/>
+    <circle cx="198" cy="84" r="6.5" fill="#c8f94c" stroke="none"/>
+    <circle cx="198" cy="84" r="6.5" fill="none"/>
+  </g>
+  <!-- droplet + sparkle accents -->
+  <path d="M214 36c1 5 2 6 7 7-5 1-6 2-7 7-1-5-2-6-7-7 5-1 6-2 7-7Z" fill="#0a0a0a"/>
+  <path d="M120 124c4 5 5.5 8 5.5 10.5a5.5 5.5 0 1 1-11 0c0-2.5 1.5-5.5 5.5-10.5Z" fill="#c8f94c"/>
+</svg>
