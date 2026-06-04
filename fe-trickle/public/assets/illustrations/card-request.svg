@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="168" viewBox="0 0 240 168" fill="none">
+  <g stroke="#0a0a0a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- shareable invoice card -->
+    <rect x="30" y="44" width="92" height="80" rx="10" fill="#ffffff"/>
+    <path d="M44 66h40M44 80h64M44 94h28" stroke-width="1.8"/>
+    <rect x="44" y="104" width="34" height="10" rx="3" fill="#c8f94c" stroke="none"/>
+    <!-- link chain to the right -->
+    <path d="M150 70a16 16 0 0 1 0 28h-10"/>
+    <path d="M150 70h10a16 16 0 0 1 0 28"/>
+    <path d="M150 84h26" stroke-dasharray="2 8"/>
+    <!-- outbound share arrow -->
+    <path d="M168 116l28-28"/>
+    <path d="M180 86h16v16"/>
+  </g>
+  <circle cx="206" cy="120" r="6" fill="#c8f94c"/>
+  <path d="M118 30c1 5 2 6 7 7-5 1-6 2-7 7-1-5-2-6-7-7 5-1 6-2 7-7Z" fill="#0a0a0a"/>
+</svg>
