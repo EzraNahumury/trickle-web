@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="168" viewBox="0 0 240 168" fill="none">
+  <g stroke="#0a0a0a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- shield = non-custodial vault -->
+    <path d="M120 26l46 16v34c0 30-20 48-46 62-26-14-46-32-46-62V42l46-16Z" fill="#ffffff"/>
+    <!-- keyhole -->
+    <circle cx="120" cy="82" r="11" fill="#c8f94c" stroke="#0a0a0a"/>
+    <path d="M120 93v18" stroke-width="3"/>
+    <!-- withdraw-anytime arrow looping out -->
+    <path d="M150 120c14-6 22-18 22-34" stroke-dasharray="2 8"/>
+    <path d="M166 88l8-2 2 8"/>
+  </g>
+  <path d="M64 52c1 5 2 6 7 7-5 1-6 2-7 7-1-5-2-6-7-7 5-1 6-2 7-7Z" fill="#0a0a0a"/>
+  <circle cx="180" cy="48" r="5" fill="#c8f94c"/>
+</svg>
