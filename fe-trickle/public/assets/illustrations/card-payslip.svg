@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="168" viewBox="0 0 240 168" fill="none">
+  <g stroke="#0a0a0a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- document with folded corner -->
+    <path d="M70 28h70l30 30v82a8 8 0 0 1-8 8H70a8 8 0 0 1-8-8V36a8 8 0 0 1 8-8Z" fill="#ffffff"/>
+    <path d="M140 28v22a8 8 0 0 0 8 8h22"/>
+    <!-- payslip rows -->
+    <path d="M80 74h60M80 90h60M80 106h36" stroke-width="1.8"/>
+    <!-- amount highlight -->
+    <rect x="80" y="116" width="50" height="14" rx="4" fill="#c8f94c" stroke="none"/>
+  </g>
+  <!-- PDF / verified check badge -->
+  <circle cx="150" cy="120" r="17" fill="#0a0a0a"/>
+  <path d="M142 120.5l5 5 9-10" stroke="#c8f94c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M196 44c1 5 2 6 7 7-5 1-6 2-7 7-1-5-2-6-7-7 5-1 6-2 7-7Z" fill="#0a0a0a"/>
+</svg>
