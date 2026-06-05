@@ -29,6 +29,28 @@ export const NAV_LINKS = [
   { label: "Features", href: "#features" },
   { label: "Use cases", href: "#use-cases" },
   { label: "By the numbers", href: "#numbers" },
+  { label: "On-chain", href: "#onchain" },
+] as const;
+
+/**
+ * The live, verified contracts behind Trickle on Celo Mainnet. Addresses come
+ * from the trickle-sdk package so the site, the dApp and any integrator always
+ * agree on what's deployed. Rendered by the On-chain section with a live block
+ * feed — "don't trust, verify".
+ */
+export const ONCHAIN_CONTRACTS = [
+  {
+    name: "TrickleVault",
+    role: "Deposits, per-second streams & withdrawals",
+    address: TRICKLE_VAULT_ADDRESS,
+    href: LINKS.mainnet,
+  },
+  {
+    name: "StreamRegistry",
+    role: "On-chain payslip attestations",
+    address: STREAM_REGISTRY_ADDRESS,
+    href: LINKS.registry,
+  },
 ] as const;
 
 /** Trust / tech strip — the real stack, not logos we don't have rights to. */
