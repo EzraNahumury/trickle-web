@@ -3,10 +3,18 @@
  * the Trickle README — no invented customers, no fabricated metrics.
  */
 
+import {
+  celoscan,
+  TRICKLE_VAULT_ADDRESS,
+  STREAM_REGISTRY_ADDRESS,
+} from "trickle-sdk";
+
 export const LINKS = {
   github: "https://github.com/EzraNahumury/trickle-web",
-  mainnet:
-    "https://celoscan.io/address/0x8a3e5d16F088A1D96f554970e5eED8468e7ddc05",
+  // Contract addresses + explorer links come straight from the trickle-sdk
+  // package — single source of truth shared with the dApp and any integrator.
+  mainnet: celoscan("address", TRICKLE_VAULT_ADDRESS),
+  registry: celoscan("address", STREAM_REGISTRY_ADDRESS),
   sepolia:
     "https://sepolia.celoscan.io/address/0x42cADdd47E795A6e04d820A6c140AF04159C7542",
   proofOfShip: "https://talent.app/~/earn/celo-proof-of-ship",
@@ -178,7 +186,8 @@ export const FOOTER_GROUPS = [
   {
     title: "On-chain",
     links: [
-      { label: "Mainnet contract", href: LINKS.mainnet },
+      { label: "TrickleVault", href: LINKS.mainnet },
+      { label: "StreamRegistry", href: LINKS.registry },
       { label: "Sepolia contract", href: LINKS.sepolia },
       { label: "Proof of Ship", href: LINKS.proofOfShip },
     ],
