@@ -1,0 +1,33 @@
+name: CI
+
+# Builds the Trickle web app on every push / PR. The install step pulls the
+# published `trickle-sdk` package from the npm registry, so each run exercises
+# the SDK the way an external Celo / MiniPay integrator would.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: fe-trickle
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Fresh install from the registry — downloads trickle-sdk each run.
+      - name: Install dependencies
+        run: npm install
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Build
+        run: npm run build
