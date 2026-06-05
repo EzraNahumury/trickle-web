@@ -6,6 +6,7 @@ import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { WorkflowSection } from "@/components/sections/WorkflowSection";
 import { UseCasesSection } from "@/components/sections/UseCasesSection";
 import { StatsSection } from "@/components/sections/StatsSection";
+import { OnchainSection } from "@/components/sections/OnchainSection";
 import { CTASection } from "@/components/sections/CTASection";
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
           <WorkflowSection />
           <UseCasesSection />
           <StatsSection />
+          <OnchainSection />
           <CTASection />
         </div>
       </main>
