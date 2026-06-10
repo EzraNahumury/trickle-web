@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import { formatUnits } from "viem";
 import {
   useAccount,
@@ -82,6 +83,8 @@ function ConnectorRow({
 
 function ConnectPanel({ onClose }: { onClose: () => void }) {
   const { connect, connectors } = useConnect();
+  const router = useRouter();
+  const pathname = usePathname();
   const [pendingId, setPendingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -109,7 +112,11 @@ function ConnectPanel({ onClose }: { onClose: () => void }) {
     connect(
       { connector },
       {
-        onSuccess: () => onClose(),
+        onSuccess: () => {
+          onClose();
+          // Straight into the app after connecting (unless already there).
+          if (!pathname.startsWith("/app")) router.push("/app");
+        },
         onError: (err) => setError(err.message),
         onSettled: () => setPendingId(null),
       },
