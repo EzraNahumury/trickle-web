@@ -23,14 +23,8 @@ export function HeroArt({ className = "" }: { className?: string }) {
       viewBox="0 0 360 360"
       className={className}
       role="img"
-      aria-label="A stablecoin streaming payroll by the second, orbited by clock, droplet and wallet glyphs"
+      aria-label="A Celo coin streaming payroll by the second, orbited by clock, droplet and wallet glyphs"
     >
-      <defs>
-        <clipPath id="coinClip">
-          <circle cx="180" cy="180" r="52" />
-        </clipPath>
-      </defs>
-
       <g className="animate-float">
         {/* faint backdrop halo */}
         <circle cx="180" cy="180" r="150" fill={LIME} opacity="0.07" />
@@ -90,34 +84,17 @@ export function HeroArt({ className = "" }: { className?: string }) {
           <circle cx="180" cy="118" r="5" fill={INK} />
         </g>
 
-        {/* ── Centre coin ────────────────────────────────────────────── */}
+        {/* ── Centre coin — 3D glass Celo coin ───────────────────────── */}
         <g className="animate-float-soft">
-          <circle cx="180" cy="180" r="52" fill="#fff" stroke={INK} strokeWidth="2.5" />
-          {/* lime accrual arc */}
-          <path
-            d="M180 128 a52 52 0 0 1 45 26"
-            fill="none"
-            stroke={LIME_DEEP}
-            strokeWidth="5"
-            strokeLinecap="round"
+          {/* soft ground shadow so the 3D coin sits in the line-art scene */}
+          <ellipse cx="180" cy="246" rx="44" ry="9" fill={INK} opacity="0.08" />
+          <image
+            href="/celo-glass-crypto-coin-3d-illustration-free-png-removebg-preview.png"
+            x="108"
+            y="106"
+            width="144"
+            height="144"
           />
-          {/* coin ticks */}
-          <g clipPath="url(#coinClip)" stroke={INK} strokeWidth="1.4" opacity="0.18">
-            <path d="M150 180 H210 M180 150 V210" />
-          </g>
-          {/* dollar glyph */}
-          <text
-            x="180"
-            y="180"
-            textAnchor="middle"
-            dominantBaseline="central"
-            fontFamily="var(--font-mono), monospace"
-            fontSize="44"
-            fontWeight="600"
-            fill={INK}
-          >
-            $
-          </text>
         </g>
 
         {/* ── Streaming droplets falling from the coin ───────────────── */}
