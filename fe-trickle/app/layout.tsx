@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { WalletProvider } from "@/components/web3/WalletProvider";
+import { FluidBackground } from "@/components/backgrounds/FluidBackground";
 
 // Editorial display face — distinctive grotesque for big headlines.
 const bricolage = Bricolage_Grotesque({
@@ -78,6 +79,7 @@ export default function RootLayout({
       className={`${bricolage.variable} ${geistSans.variable} ${geistMono.variable}`}
     >
       <body className="min-h-dvh antialiased">
+        <FluidBackground />
         <WalletProvider>{children}</WalletProvider>
       </body>
     </html>
