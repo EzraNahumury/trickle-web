@@ -33,7 +33,10 @@ export function FluidBackground() {
   return (
     <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
       <Ferrofluid
-        colors={["#b9b6a6", "#a9e61c", "#c8f94c"]}
+        // Mirrors the content palette: mostly warm-gray contour lines (the
+        // line/muted token family) with lime only as the occasional accent —
+        // same ratio the page itself uses ink/gray vs lime.
+        colors={["#8c8a7c", "#a3a193", "#b4b2a4", "#a9e61c"]}
         speed={0.22}
         scale={1.7}
         turbulence={0.8}
@@ -43,7 +46,7 @@ export function FluidBackground() {
         shimmer={0.8}
         glow={1.15}
         flowDirection="down"
-        opacity={0.55}
+        opacity={0.6}
         mouseInteraction
         mouseStrength={0.8}
         mouseRadius={0.28}
